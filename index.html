@@ -1,6 +1,6 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
+[ . ] <div> and <span>
 [  ] height: and width:
 [  ] margin: and padding: 
 [  ] Three Images
@@ -16,17 +16,136 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      .question-mark {
+        color: red;
+      }
+      #official-info {
+        background-color: rgb(211, 211, 211);
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+        background-color: black;
+        overflow: hidden;
 
-  </style>
-</head>
-<body>
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoratiin: none;
+        padding: 8px;
+        background-color: grey;
+        color: white;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
 
- 
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
 
-</body>
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      h1{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">About</a></li>
+      <li><a href="about.html">Our Faculty</a></li>
+    </ul>
+   <h1>
+      YOU ARE INVITED!!!
+    </h1>
+    Please see the invitation below regarding in depth invite including dates, times and location
+     <h2>
+       
+    <div>
+      LaGuardia High School
+       </div> 
+       <div>Class of 2025</div>
+      Winter Dance Showcase
+    </h2>
+    <p>
+      The graduating senior class of 2025
+      <span class="question-mark">SENIOR DANCE MAJORS</span> have been working
+      and training hard every single day, 5 days a week for the past 4 years.
+      Through non stop rehersals and extra time spent outside of school, we put
+      in all the hard work and dedication needed to present such an amazing
+      show. Over the 4 years we have been training in all styles including
+      Ballet, Jazz, Horton Tecnique, Limon Technique, Graham Technique, Tap and
+      we even studied Choreography in our 2nd semester of junior year and
+      presented our work in the 2024 Junior Projects Showcase. The work that has
+      been put in by both the dance department faculty and the senior dance
+      majors here at LaGuardia is <em>extraordinary</em> The faculty is the
+      guiding tool that us students need in order tofaculty is the guiding tool
+      that us students need in order to be sucessful in whatever path and route
+      we decide to go on. Without their knowledge, effort, commitement and
+      decication, we would not have the abilities and strengh that we have
+      today.
+    </p>
+   <center>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMHvyjiEMS0Hjjt-kyqPIgc9mZWl_GO3TZBA&s"
+            alt="Avatar"
+            style="width: 300px; height: 300px"
+          />
+        </div>
+        <div class="flip-card-back">
+          <h1>LaGuardia's Senior Dance Majors Winter Showcase (Class of 2025)</h1>
+          <p>Location: Little Flower Theater</p>
+          <p>January 17th:4pm and 7pm and January 18th:2pm and 6:30pm</p>
+        </div>
+      </div>
+    </div>
+     </center>
+  </body>
 </html>

@@ -1,0 +1,250 @@
+<!-- Unit 5 Project
+Requirements
+[ . ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Flexbox
+[ no ] Feature 2 - Flip Card
+[ no ] Feature 3 - Navbar
+[ no ] Feature 4 - Shaking Animation
+[ no ] Feature 5 - Gradient Background
+[ no ] Feature 6 - Spotify Playlist
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      .question-mark {
+        color: red;
+      }
+      #official-info {
+        background-color: rgb(211, 211, 211);
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        background-color: black;
+        overflow: hidden;
+
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoratiin: none;
+        padding: 8px;
+        background-color: grey;
+        color: white;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 300px;
+        height: 300px;
+        perspective: 1000px;
+      }
+
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">About</a></li>
+      <li><a href="about.html">Our Faculty</a></li>
+    </ul>
+    <h1>FACULTY!!!</h1>
+    Below is the list of our amazing faculty at LaGuardia High School in the
+    Dance Department
+  <h2>
+    Michele Mathesius - Dance Department Chair Person
+    </h2>
+    <img src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/mathesius.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:68.08%25/rs=w:600,h:451.12781954887214,cg:true" width="150
+    ">
+    Michelle Mathesius is nationally known as a choreographer, producer, teacher and inter-nationally known for her work in preserving our nation’s dance heritage through revivals of the dances of the “Mother and Father of American Modern Dance,” Ruth St. Denis and Ted Shawn. With her partner Jane Sherman she founded the Denishawn Repertory Dancers currently featured in two video documentaries, DENISHAWN: THE BIRTH OF MODERN DANCE and DENISHAWN DANCES ON. In addition, while serving on the New Jersey State Council on the Arts and the Governor’s Arts Literacy Task Force, she authored and implemented the original model for Performing Arts “shops” within New Jersey’s Vocational High Schools and co-founded the New Jersey Center for the Performing Arts.
+    <h2>
+     Greg Sinacori (Dance Co ChairPerson) - Modern Dance (Horton Technique) </h3>
+    <img src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/GregS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:76.86%25/rs=w:600,h:451.12781954887214,cg:true" width="150">
+         Greg Sinacori, a natve New Yorker, is an alumnus of LaGuardia High School and Fordham University where he received his Bachelor of Fine Arts degree in Dance through the Alvin Ailey / Fordham University BFA program. Mr. Sinacori is a YoungArts Finalist and has danced professionally with Alvin Ailey's second company, Ailey II, The Parsons Dance Company, Fred Benjamin Dance Company, Heidi Latsky Dance and Battleworks. He has also worked commercially as a motion capture performer on numerous animated series for Nickelodeon including the Backyardigans and the Bubbleguppies. As an educator Mr. Sinacori was on faculty at LaGuardia High School since 2011. In 2015 he created the LaGuardia Dance Ensemble (LDE) where students are given the opportunity to perform repertory at venues in and around NYC.  Mr. Sinacori holds his Masters degree in Educational Leadership and looks forward to the future of Dance at LaGuardia High School.
+    </h2>
+    <h2>Tadej Brdnik - Modern Dance (Graham Technique)</h2>
+    <img
+      src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/Tadej-Brdnik-e1536079438899.jpg/:/cr=t:0%25,l:16.67%25,w:66.67%25,h:100%25/rs=w:365,h:365,cg:true/fx-gs"
+      width="150"
+    />
+    TADEJ BRDNIK is a program director, educator, regisseur, curator,
+    choreographer, and former Principal Dancer with the Martha Graham Dance
+    Company. He began his career in Slovenia and has danced with Baryshnikov’s
+    White Oak Dance Project, Graham 2, Robert Wilson, Battery Dance Company, and
+    in works by Maurice Béjart, Nacho Duato, Lucinda Childs, Yvonne Rainer,
+    Susan Stroman, Anne Bogart, Doug Varone, Andonis Foniadakis, Larry Keigwin,
+    among others. He appeared in the feature film “Noah.” Tadej choreographed
+    works on Battery Dance Company, KanopyDance, Graham 2, LaGuardia High
+    School, Teens@Graham, and Milwaukee Dance Theater, among others as well as
+    for Slovenian National TV. He was Assisting Choreographer to Susan McClain’s
+    “Ardent Song (Redux)” and Luca Veggetti’s “The Tempest Songbook,” both for
+    the Martha Graham Dance Company. Tadej is a full-time modern faculty at the
+    LaGuardia High School for the Performing Arts, and teaches internationally,
+    at the Graham School and for “Dancing to Connect.”He is a regisseur for the
+    Martha Graham Dance Company. Formerly he held positions such as Education
+    Director for the Downtown Dance Festival and Programs Director for the
+    Martha Graham Dance Company. Tadej is a recipient of The Benetton Dance
+    Award and the Eugene Loring Award and is a BAM/DeVos Institute Performer in
+    Transition Fellow.
+    <h2>Mary Brienza - Theater and Jazz Technique</h2>
+    <img
+      src="https://lh6.googleusercontent.com/proxy/44Z1haoVH9fnEcyC1VBRmBV2_MgkYpkONp2SJp4266jq55ZveQfkGkKEwIiSK4XM2VWAddXC1HBPNtfMEcMQb809CUbftoy578Lzv9Aj"
+      width="150"
+    />
+    Mary Brienza is a multi-faceted artist with credits spanning Off-Broadway
+    and regional theatre, television, radio, concert dance and alternative
+    comedy. As an educator, she is a respected teacher of tap dance, jazz, and
+    theatre dance at levels novice through professional. She has served on the
+    faculty for Broadway Dance Center, Dance Theatre of Harlem, Jacque
+    D’Amboise’s National Dance Institute, and American Theatre Dance Workshop.
+    <h2>Catherine Brikké - Ballet</h2>
+    <img
+      src="https://lh6.googleusercontent.com/proxy/R6IwspDcZORzlrWnfVLf0CXRqXOIjc9c_i_rZaxedMKfw03uev5JF18GSyXUYErB4efuW7GnsSojRa0BcTI-YMsqkIk9nXVaQ-unwFxIjsq9qNaFQxRbr9A"
+      width="150"
+    />
+    A native of France, Ms. Brikké studied ballet with remarkable teachers such
+    as Rosella Hightower at the Centre International de Danse in Cannes, France,
+    Marika Besobrasova at the Académie de Danse Princesse Grace in Monaco, Terri
+    Charlesworth at the Graduate School of Dance in Perth, Australia, and
+    Anne-Marie Sandrini from the Paris Opéra Ballet in Paris, France. Ms. Brikké
+    performed in a wide variety of repertory ballets with the schools she
+    attended as well as a freelance dancer and actress in Europe, Kenya and the
+    United States. Ms. Brikké received the Diplôme d‘Etat de Professeur de Danse
+    Classique from the French Ministry of Culture in Paris in 1993 . She is an
+    ABT® Certified Teacher who has successfully completed the ABT® Teacher
+    Training Intensive in Pre-Primary through Level 7 & Partnering of the ABT®
+    National Training CurriculumMs. Brikké began teaching dance in 1989 in
+    Nairobi, Kenya, where she taught the children of the expatriate community as
+    well as founded a dance ensemble for young talented Kenyans. Back in Paris,
+    she taught, choreographed and coordinated dance programs at the
+    Conservatoire des Arts in Le Mée. In 1994, Ms Brikké moved to New York where
+    she joined the faculty of the Neubert Ballet Institute at Carnegie Hall and
+    then the faculty of LaGuardia High School in 1998. Ms. Brikké has taught for
+    several summer programs including Paul Taylor Summer Intensive in New York
+    City, New Jersey Ballet, Westchester Ballet Center and Belvoir Terrace in
+    Lenox, Massachussetts.
+    <h2>Kristen Foote - Modern Dance (Limon Technique)</h2>
+    <img
+      src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/TISCH-2019-headshot-214x300.jpg/:/cr=t:11.67%25,l:0%25,w:100%25,h:76.67%25/rs=w:365,h:365,cg:true/fx-gs"
+      width="150"
+    />
+    New York City–based dancer, performer, teacher, Limón reconstructor and
+    coach, Kristen Foote is originally from Toronto, Canada, and joined the
+    Limón Dance Company in 2000 - where she was a principal dancer until 2017.
+    Hailed by the New York Times as “marvelously versatile” and "especially
+    captivating”, Ms. Foote has been recognized by Dance Magazine as a “Featured
+    Artist” during 2011 and 2016, selected as one of the “Most Amazing
+    Performers” of 2010 and one of their “Top 25 To Watch” in 2005. She has
+    performed as a soloist in many roles by noted choreographers including,
+    Isadora Duncan, Doris Humphrey, Anna Sokolow, Jiří Kylián, Donald McKayle,
+    Lar Lubovitch, Rodrigo Pederneiras, Susanne Linke, Murray Louis and John
+    Heginbotham. In 2015, she developed a solo dance project which had its
+    international premiere in Paris, France and its U.S. premiere at Jacob’s
+    Pillow Inside Out Series as well as at the Baryshnikov Arts Center presented
+    by The Watermill Center. She was a Radio City Rockette, has been a member of
+    Dance Heginbotham since 2011, has performed with Mark Morris Dance Group,
+    and has been featured as a lead dancer in music videos.
+    <h2>Mikhail Ilyin - Ballet</h2>
+    <img
+      src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/Screen%20Shot%202024-09-22%20at%2011.22.08%20PM.png/:/cr=t:0.53%25,l:0%25,w:100%25,h:98.94%25/rs=w:365,h:365,cg:true/fx-gs"
+      width="150"
+    />
+    Master of Fine Arts, Montclair State University Born in St. Petersburg,
+    Mikhail graduated from Vaganova Ballet Academy in 1998 with a BA in Arts. In
+    1999, he joined the Boston Ballet for two years and then Miami City Ballet,
+    where he became principal in 2003. His repertoire with Miami City Ballet
+    included leading roles in a full spectrum of classical and contemporary
+    répertoire. Mikhail Ilyin joined the American Ballet Theatre in January
+    2008; he performed leading roles and soloist roles in Etudes, Corsaire,
+    Company B, Rabbit and Rogue, Swan Lake, Merry Widow, and Sleeping Beauty,
+    among others. Mikhail Ilyin won the Gold Medal at the International Ballet
+    Competition "Vaganova Prix" and a diploma at the Paris International Dance
+    Competition (1998), a Silver Medal at the New York International Ballet
+    Competition (2000), and a Bronze Medal at the International Ballet
+    Competition in Jackson (2002). Mr. Ilyin has performed, taught, staged and
+    choreographed across the United States, including the Miami City Ballet
+    School and Pacific Northwest Ballet School, American Ballet Theatre and
+    Alvin Ailey (currently faculty member), Joffrey Ballet schools and different
+    colleges around the country. In 2005, he was chosen by Dance Magazine as one
+    of the "to watch" dancers of today. He has been an Artist-in-Residence with
+    Ballet Mississippi since 2005. In addition, Mikhail Ilyin is fully certified
+    with all the levels of ABT's National Training Curriculum Pedagogy Program
+    and the Feldenkrais Method of Somatic Education (a 4 year Professional
+    Training Program in Awareness Through Movement and Functional Integration).
+    In 2023 Mikhail Ilyin has become a Ballet faculty member at LaGuardia High
+    School for the Performing Arts.
+    <h2> Kelley Potter </h2>
+    <img
+      src="https://img1.wsimg.com/isteam/ip/b3d63554-065e-452e-8a88-cc20d56fcd4a/Kelley-Potter2.jpg/:/cr=t:8%25,l:0%25,w:100%25,h:92%25/rs=w:365,h:365,cg:true/fx-gs"
+      width="150"
+    />
+    Born in Kernersville, North Carolina, Kelley Potter received her
+    professional ballet training at the North Carolina School of the Arts. She
+    joined American Ballet Theatre Studio Company under the direction of John
+    Meehan immediately following her graduation from NCSA in 2002. Kelley soon
+    joined the Boston Ballet dancing many soloist and principal roles. In 2009,
+    Kelley moved back to NYC to dance with American Ballet Theatre again full
+    time. She’s had the wonderful fortune of touring all over the world working,
+    with world renowned choreographers, and performing in some of the most
+    prestigious theaters and opera houses. In 2018 Kelley retired from the stage
+    and began teaching full time. Kelley is an American Ballet Theatre Certified
+    Teacher in Levels Primary thru Level 7 of the American Ballet Theatre
+    National Training Curriculum. She is currently a full time teacher for the
+    Jacqueline Kennedy Onassis School of American Ballet Theatre. She is also
+    the Artistic Coordinator for the American Ballet Theatre’s Apprenticeship
+    Program. She is a guest faculty teacher for the University of North Carolina
+    School of the Arts, Steps on Broadway, Manhattan Youth Ballet, and Ballet
+    Arts.
+  </body>
+</html>
